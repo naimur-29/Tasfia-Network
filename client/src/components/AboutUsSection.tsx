@@ -1,9 +1,9 @@
 // src/components/AboutUsSection.tsx
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./ui/card";
 // Icons are no longer needed for the sidebar phrases, but keep them if used elsewhere in this component.
 
 // images
-import bg1 from "@/assets/images/hero_bg_1.jpg";
+import bg1 from "../assets/images/hero_bg_1.jpg";
 
 export function AboutUsSection() {
   return (

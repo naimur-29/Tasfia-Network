@@ -2,7 +2,7 @@
 import { Facebook, Mail as MailIcon } from "lucide-react"; // Using MailIcon for clarity
 
 // images:
-import btrc_logo from "@/assets/images/btrc_logo.png";
+import btrc_logo from "../assets/images/btrc_logo.png";
 
 const footerLinks = {
   whoWeAre: [

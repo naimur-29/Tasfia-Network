@@ -8,8 +8,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+} from "./ui/navigation-menu";
+import { Button } from "./ui/button";
 import {
   Sheet,
   SheetContent,
@@ -17,13 +17,13 @@ import {
   SheetTitle,
   SheetTrigger,
   SheetClose,
-} from "@/components/ui/sheet";
+} from "./ui/sheet";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "./ui/accordion";
 import {
   Home,
   Info,
@@ -36,7 +36,7 @@ import {
 } from "lucide-react";
 
 // images
-import logo from "@/assets/images/logo.jpg";
+import logo from "../assets/images/logo.jpg";
 
 interface NavLinkItem {
   label: string;
@@ -176,9 +176,7 @@ export function NavigationBar() {
                 link.subLinks ? (
                   <NavigationMenuItem key={link.label}>
                     <NavigationMenuTrigger className="bg-indigo-700 hover:bg-indigo-600 data-[state=open]:bg-indigo-600 text-white text-xs xl:text-sm px-2 py-1.5 xl:px-3 xl:py-2">
-                      {React.cloneElement(link.icon, {
-                        className: "h-4 w-4 mr-1 hidden md:inline-block",
-                      })}
+                      {React.cloneElement(link.icon, {})}
                       {link.label}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -207,9 +205,7 @@ export function NavigationBar() {
                       }}
                       className={`${navigationMenuTriggerStyle()} bg-indigo-700 hover:bg-indigo-600 text-white text-xs xl:text-sm flex items-center px-2 py-1.5 xl:px-3 xl:py-2`}
                     >
-                      {React.cloneElement(link.icon, {
-                        className: "h-4 w-4 mr-1 hidden md:inline-block",
-                      })}
+                      {React.cloneElement(link.icon, {})}
                       {link.label}
                     </a>
                   </NavigationMenuItem>
@@ -259,9 +255,7 @@ export function NavigationBar() {
                       <AccordionItem value={link.label} className="border-b-0">
                         <AccordionTrigger className="hover:no-underline hover:bg-indigo-600 px-3 py-2.5 rounded-md text-sm w-full justify-between">
                           <span className="flex items-center">
-                            {React.cloneElement(link.icon, {
-                              className: "h-5 w-5 mr-3",
-                            })}
+                            {React.cloneElement(link.icon, {})}
                             {link.label}
                           </span>
                         </AccordionTrigger>
@@ -296,9 +290,7 @@ export function NavigationBar() {
                         }
                         className={`flex items-center px-3 py-2.5 rounded-md text-sm hover:bg-indigo-600`}
                       >
-                        {React.cloneElement(link.icon, {
-                          className: "h-5 w-5 mr-3",
-                        })}
+                        {React.cloneElement(link.icon, {})}
                         {link.label}
                       </a>
                     </SheetClose>

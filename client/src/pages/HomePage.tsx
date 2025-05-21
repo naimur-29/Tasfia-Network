@@ -1,7 +1,7 @@
 // src/pages/HomePage.tsx
-import { PackagesSection } from "@/components/PackagesSection"; // Import the new section
-import { AboutUsSection } from "@/components/AboutUsSection";
-import { ContactUsSection } from "@/components/ContactUsSection";
+import { PackagesSection } from "../components/PackagesSection"; // Import the new section
+import { AboutUsSection } from "../components/AboutUsSection";
+import { ContactUsSection } from "../components/ContactUsSection";
 import HeroSection from "../components/HeroSection";
 
 export function HomePage() {

@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { packagesData, PackageItemData } from "@/data/packagesData"; // Import data
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { packagesData, PackageItemData } from "../data/packagesData"; // Import data
 
 export function PackagesSection() {
   return (

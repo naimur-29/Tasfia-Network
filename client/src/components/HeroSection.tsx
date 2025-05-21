@@ -6,15 +6,15 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+} from "./ui/carousel";
+import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
 import Autoplay from "embla-carousel-autoplay";
 
 // images
-import bg1 from "@/assets/images/hero_bg_1.jpg";
-import bg2 from "@/assets/images/hero_bg_2.jpg";
-import bg3 from "@/assets/images/hero_bg_3.jpg";
+import bg1 from "../assets/images/hero_bg_1.jpg";
+import bg2 from "../assets/images/hero_bg_2.jpg";
+import bg3 from "../assets/images/hero_bg_3.jpg";
 
 export function HeroSection() {
   const [api, setApi] = React.useState<CarouselApi>();

@@ -1,5 +1,5 @@
 // src/components/ContactUsSection.tsx
-import { Card, CardContent } from "@/components/ui/card"; // Removed CardHeader, CardTitle if not used
+import { Card, CardContent } from "./ui/card"; // Removed CardHeader, CardTitle if not used
 import { Phone, Clock, MapPin } from "lucide-react";
 
 const contactDetails = [
@@ -148,12 +148,6 @@ export function ContactUsSection() {
                       className={`flex items-center space-x-3 text-sm ${group.highlight ? "text-slate-700" : "text-slate-600 dark:text-slate-300"}`}
                     >
                       {item.icon && item.icon}
-                      {item.name && (
-                        <span className="font-medium">{item.name}</span>
-                      )}
-                      {item.title && (
-                        <span className="text-xs">({item.title})</span>
-                      )}
                       {item.text && (
                         <a href={item.href} className="hover:underline">
                           {item.text}
