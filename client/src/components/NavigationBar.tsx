@@ -36,7 +36,7 @@ import {
 } from "lucide-react";
 
 // images
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/logo.webp";
 
 interface NavLinkItem {
   label: string;

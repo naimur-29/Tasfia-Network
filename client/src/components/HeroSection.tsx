@@ -12,9 +12,9 @@ import { Button } from "./ui/button";
 import Autoplay from "embla-carousel-autoplay";
 
 // images
-import bg1 from "../assets/images/hero_bg_1.jpg";
-import bg2 from "../assets/images/hero_bg_2.jpg";
-import bg3 from "../assets/images/hero_bg_3.jpg";
+import bg1 from "../assets/images/hero_bg_1.webp";
+import bg2 from "../assets/images/hero_bg_2.webp";
+import bg3 from "../assets/images/hero_bg_3.webp";
 
 export function HeroSection() {
   const [api, setApi] = React.useState<CarouselApi>();
