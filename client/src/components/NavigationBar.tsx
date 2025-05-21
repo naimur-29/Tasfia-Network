@@ -27,63 +27,71 @@ import {
 import {
   Home,
   Info,
-  DollarSign,
   Package,
   Server,
   Mail,
   Wifi,
   Menu,
+  Paperclip,
 } from "lucide-react";
 
+// images
+import logo from "@/assets/images/logo.jpg";
+
 interface NavLinkItem {
-  id: string; // Section ID to scroll to
   label: string;
   icon: React.ReactElement;
+  link: string;
   subLinks?: SubNavLinkItem[];
 }
 interface SubNavLinkItem {
-  id: string; // Section ID for sub-item
   title: string;
   description: string;
+  link: string;
 }
 
-export const navLinksData: NavLinkItem[] = [
+const navLinksData: NavLinkItem[] = [
   {
-    id: "hero-section",
     label: "Home",
     icon: <Home className="h-4 w-4 mr-2" />,
+    link: "#hero-section",
   },
   {
-    id: "about-us-section",
     label: "About Us",
     icon: <Info className="h-4 w-4 mr-2" />,
+    link: "#about-us-section",
   },
   {
-    id: "packages-section",
     label: "Packages",
     icon: <Package className="h-4 w-4 mr-2" />,
+    link: "#packages-section",
   },
   {
-    id: "contact-us-section",
     label: "Contact Us",
     icon: <Mail className="h-4 w-4 mr-2" />,
+    link: "#contact-us-section",
   },
   {
-    id: "ftp-servers-main-section",
     label: "FTP-Servers",
     icon: <Server className="h-4 w-4 mr-2" />,
+    link: "/",
     subLinks: [
       {
-        id: "ftp-movies-detail",
-        title: "Movie Server",
-        description: "Vast library of movies.",
+        title: "Coming soon...",
+        description: "",
+        link: "/",
       },
+      // {
+      //   title: "Movie Server",
+      //   description: "Vast library of movies.",
+      //   link: "https://moviemazic.xyz",
+      // },
     ],
   },
   {
-    id: "btrc-tarif-section",
     label: "BTRC Tarif",
-    icon: <DollarSign className="h-4 w-4 mr-2" />,
+    icon: <Paperclip className="h-4 w-4 mr-2" />,
+    link: "#btrc-tarif-section",
   },
 ];
 
@@ -146,10 +154,14 @@ export function NavigationBar() {
           onClick={(e) => handleScrollAndCloseMobile("hero-section", e)}
           className="flex items-center bg-white p-1.5 sm:p-2 rounded shadow shrink-0"
         >
-          <Wifi className="h-6 w-6 sm:h-8 sm:w-8 text-indigo-600 mr-1 sm:mr-2" />
+          <img
+            src={logo}
+            alt="TarfiaNetwork Logo" // Add descriptive alt text
+            className="h-6 w-6 sm:h-8 sm:w-8 mr-1 sm:mr-2" // Kept sizing and margin, removed text-color
+          />
           <div>
             <h1 className="text-sm sm:text-lg font-bold text-slate-800 leading-tight">
-              TarfiaNetwork
+              <span className="text-orange-500">Tasfia </span>Network
             </h1>
             <p className="text-[9px] sm:text-[10px] text-slate-600 tracking-tight uppercase">
               Quality & Commitment
@@ -173,9 +185,9 @@ export function NavigationBar() {
                       <ul className="grid gap-3 p-4 w-[300px] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         {link.subLinks.map((subLink) => (
                           <DesktopSubMenuItem
-                            key={subLink.id}
+                            key={subLink.link}
                             title={subLink.title}
-                            href={`#${subLink.id}`}
+                            href={`${subLink.link}`}
                           >
                             {subLink.description}
                           </DesktopSubMenuItem>
@@ -184,13 +196,13 @@ export function NavigationBar() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                 ) : (
-                  <NavigationMenuItem key={link.id}>
+                  <NavigationMenuItem key={link.link}>
                     <a
-                      href={`#${link.id}`}
+                      href={`${link.link}`}
                       onClick={(e) => {
                         e.preventDefault();
                         document
-                          .getElementById(link.id)
+                          .getElementById(link.link.slice(1))
                           ?.scrollIntoView({ behavior: "smooth" });
                       }}
                       className={`${navigationMenuTriggerStyle()} bg-indigo-700 hover:bg-indigo-600 text-white text-xs xl:text-sm flex items-center px-2 py-1.5 xl:px-3 xl:py-2`}
@@ -256,11 +268,14 @@ export function NavigationBar() {
                         <AccordionContent className="pl-[calc(1.25rem_+_0.75rem)] pr-2 pt-1 pb-1">
                           <div className="flex flex-col space-y-0.5">
                             {link.subLinks.map((subLink) => (
-                              <SheetClose asChild key={subLink.id}>
+                              <SheetClose asChild key={subLink.link}>
                                 <a
-                                  href={`#${subLink.id}`}
+                                  href={`${subLink.link}`}
                                   onClick={(e) =>
-                                    handleScrollAndCloseMobile(subLink.id, e)
+                                    handleScrollAndCloseMobile(
+                                      subLink.link.slice(1),
+                                      e,
+                                    )
                                   }
                                   className={`block w-full text-left px-3 py-1.5 rounded-md text-xs hover:bg-indigo-600`}
                                 >
@@ -273,10 +288,12 @@ export function NavigationBar() {
                       </AccordionItem>
                     </Accordion>
                   ) : (
-                    <SheetClose asChild key={link.id}>
+                    <SheetClose asChild key={link.link}>
                       <a
-                        href={`#${link.id}`}
-                        onClick={(e) => handleScrollAndCloseMobile(link.id, e)}
+                        href={`${link.link}`}
+                        onClick={(e) =>
+                          handleScrollAndCloseMobile(link.link.slice(1), e)
+                        }
                         className={`flex items-center px-3 py-2.5 rounded-md text-sm hover:bg-indigo-600`}
                       >
                         {React.cloneElement(link.icon, {

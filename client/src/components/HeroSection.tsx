@@ -11,6 +11,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Autoplay from "embla-carousel-autoplay";
 
+// images
+import bg1 from "@/assets/images/hero_bg_1.jpg";
+import bg2 from "@/assets/images/hero_bg_2.jpg";
+import bg3 from "@/assets/images/hero_bg_3.jpg";
+
 export function HeroSection() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -29,24 +34,21 @@ export function HeroSection() {
 
   const sliderItems = [
     {
-      bgImage:
-        "https://images.pexels.com/photos/8640331/pexels-photo-8640331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      bgImage: bg1,
       title1: "FIBER POWER",
       title2: "UNLEASHED",
       subtitle1: "Leading Internet Service Provider In Bangladesh",
       subtitle2: "BTRC Approved & BDIX Connectivity",
     },
     {
-      bgImage:
-        "https://images.pexels.com/photos/33153/raisting-sattelit-reception-signal.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      bgImage: bg2,
       title1: "NEXT GEN",
       title2: "SPEED",
       subtitle1: "Experience blazing fast internet for work and play.",
       subtitle2: "Reliable and Affordable Packages For Everyone.",
     },
     {
-      bgImage:
-        "https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      bgImage: bg3,
       title1: "ALWAYS",
       title2: "CONNECTED",
       subtitle1: "Stay connected with our robust fiber network.",
@@ -63,7 +65,7 @@ export function HeroSection() {
         plugins={[
           Autoplay({
             delay: 4000,
-            jump: true,
+            // jump: true,
           }),
         ]}
         setApi={setApi}

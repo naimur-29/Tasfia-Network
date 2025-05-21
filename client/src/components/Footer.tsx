@@ -1,32 +1,26 @@
 // src/components/Footer.tsx
-import {
-  Facebook,
-  Twitter,
-  Youtube,
-  Mail as MailIcon,
-  Linkedin,
-  Instagram,
-} from "lucide-react"; // Using MailIcon for clarity
+import { Facebook, Mail as MailIcon } from "lucide-react"; // Using MailIcon for clarity
+
+// images:
+import btrc_logo from "@/assets/images/btrc_logo.png";
 
 const footerLinks = {
   whoWeAre: [
-    { label: "About", href: "#about-us-section" },
-    { label: "Career", href: "#" },
-    { label: "News & Events", href: "#" },
-    { label: "Photos & Videos", href: "#" },
+    { label: "About Us", href: "#about-us-section" },
+    { label: "Our Packages", href: "#packages-section" },
     { label: "Contact Us", href: "#contact-us-section" },
-    { label: "Corporate Service", href: "#" },
   ],
   socialPresence: [
-    { label: "Facebook", href: "#", icon: <Facebook className="h-5 w-5" /> },
-    { label: "Twitter", href: "#", icon: <Twitter className="h-5 w-5" /> },
-    { label: "Youtube", href: "#", icon: <Youtube className="h-5 w-5" /> },
     {
-      label: "Gmail",
-      href: "mailto:info@dhakanetworkbd.com",
+      label: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=100075981401780",
+      icon: <Facebook className="h-5 w-5" />,
+    },
+    {
+      label: "Email",
+      href: "mailto:tasfianetwork@gmail.com",
       icon: <MailIcon className="h-5 w-5" />,
     },
-    { label: "LinkedIn", href: "#", icon: <Linkedin className="h-5 w-5" /> }, // Added
   ],
 };
 
@@ -51,7 +45,7 @@ export function Footer() {
           {/* Column 1: Who We Are */}
           <div className="md:col-span-4 lg:col-span-3">
             <h5 className="font-semibold text-slate-100 dark:text-white mb-4 uppercase text-sm tracking-wider">
-              Who We Are
+              Go Back To
             </h5>
             <ul className="space-y-2">
               {footerLinks.whoWeAre.map((link) => (
@@ -78,13 +72,13 @@ export function Footer() {
             </h5>
             <div className="bg-white p-2 rounded-md inline-block shadow-md mb-2">
               <img
-                src="https://via.placeholder.com/150x150/FFFFFF/000000?text=BTRC+Logo" // Placeholder BTRC logo
+                src={btrc_logo}
                 alt="BTRC Approved ISP"
                 className="h-20 w-auto md:h-24"
               />
             </div>
             <p className="text-xs text-slate-400 dark:text-slate-500">
-              Dhaka Network BD
+              Tasfia Network
             </p>
           </div>
 

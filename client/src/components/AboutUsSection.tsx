@@ -2,6 +2,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 // Icons are no longer needed for the sidebar phrases, but keep them if used elsewhere in this component.
 
+// images
+import bg1 from "@/assets/images/hero_bg_1.jpg";
+
 export function AboutUsSection() {
   return (
     <section
@@ -15,25 +18,10 @@ export function AboutUsSection() {
             <div className="bg-indigo-600 text-white p-4 rounded-md shadow">
               <h3 className="text-xl font-semibold">WHO WE ARE</h3>
             </div>
-            {/* Replaced navigation list with descriptive phrases */}
-            <div className="bg-white dark:bg-slate-800 p-4 rounded-md shadow space-y-3">
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                Our Unwavering Commitment to Quality Service.
-              </p>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                Powered by a Dedicated & Professional Team.
-              </p>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                Leveraging Years of Industry Experience and Expertise.
-              </p>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                A Customer-Centric Approach in Everything We Do.
-              </p>
-            </div>
             <Card className="overflow-hidden shadow-lg p-0">
               <CardContent className="p-0">
                 <img
-                  src="https://images.pexels.com/photos/8640331/pexels-photo-8640331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src={bg1}
                   alt="Network Infrastructure"
                   className="w-full h-auto object-cover"
                 />
@@ -51,31 +39,34 @@ export function AboutUsSection() {
                 </h2>
                 <div className="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
                   <p>
-                    <strong>Dhaka Network BD</strong> is a leading Internet
-                    Service Provider and IT solution company in Bangladesh. It
-                    has obtained ISP license from BTRC. Dhaka Network BD aims to
-                    provide fastest Internet connectivity by using the most
-                    advance and reliable equipment. Our careful activities will
-                    help you make informed decisions and stay ahead of the
-                    competition.
+                    <em>
+                      <strong>Tasfia Network</strong>
+                    </em>{" "}
+                    stands as a <em>premier</em> Internet Service Provider and
+                    IT solutions company in Gazipur, Bangladesh. Officially{" "}
+                    <strong>
+                      licensed by the Bangladesh Telecommunications Regulatory
+                      Commission (BTRC)
+                    </strong>
+                    , we are committed to providing top-tier services. Our core
+                    objective is to deliver unparalleled internet speeds through
+                    the deployment of <strong>advanced</strong> and highly
+                    reliable equipment. We believe our{" "}
+                    <em>meticulous approach</em> helps you make strategic
+                    decisions and gain a <strong>competitive edge</strong>.
                   </p>
                   <p>
-                    We have dedicated professional team to install and
-                    maintenance. We gained in-depth knowledge for last 12 years.
-                    Our full range of services for corporate offices includes
-                    website design & development solutions, Antivirus solutions
-                    and Networking solutions. We have a full range of Web
-                    services that are designed to meet any or all of your needs.
-                    We are committed to give you best support.
-                  </p>
-                  <p>
-                    <strong>Dhaka Network BD</strong> has license from
-                    Bangladesh Telecommunications Regulatory Commission (BTRC).
-                    <strong>Dhaka Network BD</strong> can offer broadband
-                    internet and dedicate Bandwidth over optical fiber and
-                    utp-cable. Our Main Concern Customer satisfaction as well as
-                    our customer service team is ready to serve you for 24/7/365
-                    days for solving all of your Internet related problem.
+                    Our team of dedicated professionals ensures{" "}
+                    <em>seamless installation</em> and expert maintenance. For
+                    corporate entities, our comprehensive suite of IT solutions
+                    includes website design and development, robust antivirus
+                    solutions, and sophisticated networking services. Beyond
+                    this, we offer a <strong>full array of web services</strong>{" "}
+                    designed to meet diverse requirements. We are devoted to{" "}
+                    <strong>exceptional customer support</strong>, with a team
+                    ready to assist you{" "}
+                    <em>24 hours a day, 7 days a week, 365 days a year</em>,
+                    addressing all your internet concerns.
                   </p>
                 </div>
               </CardContent>

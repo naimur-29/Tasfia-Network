@@ -10,79 +10,93 @@ const contactDetails = [
         icon: (
           <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
         ),
-        text: "01613-036370",
-        href: "tel:01613036370",
+        text: "01719-820735",
+        href: "tel:01719820735",
       },
       {
         icon: (
           <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
         ),
-        text: "01613-036371",
-        href: "tel:01613036371",
+        text: "01671-146929",
+        href: "tel:01671146929",
       },
     ],
   },
-  {
-    category: "Call For Cable Team",
-    items: [
-      {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01613-036377",
-        href: "tel:01613036377",
-      },
-      {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01613-036378",
-        href: "tel:01613036378",
-      },
-    ],
-  },
-  {
-    category: "Call For Billing",
-    items: [
-      {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01613-036369",
-        href: "tel:01613036369",
-      },
-    ],
-  },
-  {
-    category: "Call For Networking & Software Solution",
-    items: [
-      {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01718-929640",
-        href: "tel:01718929640",
-      },
-    ],
-  },
+  // {
+  //   category: "Call For Cable Team",
+  //   items: [
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01719-820735",
+  //       href: "tel:01719820735",
+  //     },
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01671-146929",
+  //       href: "tel:01671146929",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "Call For Billing",
+  //   items: [
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01719-820735",
+  //       href: "tel:01719820735",
+  //     },
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01671-146929",
+  //       href: "tel:01671146929",
+  //     },
+  //   ],
+  // },
+  // {
+  //   category: "Call For Networking & Software Solution",
+  //   items: [
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01719-820735",
+  //       href: "tel:01719820735",
+  //     },
+  //     {
+  //       icon: (
+  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+  //       ),
+  //       text: "01671-146929",
+  //       href: "tel:01671146929",
+  //     },
+  //   ],
+  // },
   {
     category: "Call For Management",
     highlight: true,
     items: [
-      { name: "MD. Mohiuddin", title: "Managing Director" },
+      { name: "Kartik Robi Das", title: "Managing Director" },
       {
         icon: (
           <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
         ),
-        text: "01942-914714",
-        href: "tel:01942914714",
+        text: "01719-820735",
+        href: "tel:01719820735",
       },
       {
         icon: (
           <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
         ),
-        text: "01613-036373",
-        href: "tel:01613036373",
+        text: "01671-146929",
+        href: "tel:01671146929",
       },
     ],
   },
@@ -97,7 +111,8 @@ const contactDetails = [
 // 5. Copy the HTML iframe code provided.
 // 6. Replace the `src` attribute of the iframe below with the `src` you copied.
 const mapEmbedSrc =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38300003888!2d90.2791943542249!3d23.780573260373774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1701092190839!5m2!1sen!2sbd";
+  "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d911.2936615426325!2d90.42564610694534!3d23.989609163260734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1747807295382!5m2!1sen!2sbd";
+// "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38300003888!2d90.2791943542249!3d23.780573260373774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1701092190839!5m2!1sen!2sbd";
 
 export function ContactUsSection() {
   return (
@@ -166,10 +181,7 @@ export function ContactUsSection() {
               </h3>
               <div className="flex items-start space-x-3 text-slate-600 dark:text-slate-300 text-sm">
                 <MapPin className="h-4 w-4 text-indigo-600 dark:text-indigo-400 mt-1 shrink-0" />
-                <span>
-                  House#75, Road#Shah Makhdum Avenue, Sector#12, Uttara,
-                  Dhaka-1230
-                </span>
+                <span>Hasnahena Villa, Bhora, Gazipur-1700</span>
               </div>
             </div>
           </div>
