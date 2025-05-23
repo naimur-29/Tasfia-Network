@@ -36,7 +36,7 @@ export function AboutUsSection() {
             <Card className="bg-white dark:bg-slate-800 shadow-lg">
               <CardContent className="p-6 md:p-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-indigo-700 dark:text-indigo-400 mb-4">
-                  We are one of the leading internet service providers in
+                  We're one of the leading internet service providers in
                   Gazipur.
                 </h2>
                 <div className="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
@@ -59,12 +59,7 @@ export function AboutUsSection() {
                     and expert maintenance.
                   </p>
                   <p>
-                    For corporate entities, our comprehensive suite of IT
-                    solutions includes website design and development, robust
-                    antivirus solutions, and sophisticated networking services.
-                    Beyond this, we offer a{" "}
-                    <strong>full array of web services</strong> designed to meet
-                    diverse requirements. Our main concern is{" "}
+                    Our main concern is{" "}
                     <strong>exceptional customer support</strong>, with a team
                     ready to assist you{" "}
                     <em>24 hours a day, 7 days a week, 365 days a year</em>, for
