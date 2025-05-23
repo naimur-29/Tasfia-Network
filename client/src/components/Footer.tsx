@@ -12,12 +12,12 @@ const footerLinks = {
   ],
   socialPresence: [
     {
-      label: "Facebook",
+      label: "Visit Our Facebook Page",
       href: "https://www.facebook.com/profile.php?id=100075981401780",
       icon: <Facebook className="h-5 w-5" />,
     },
     {
-      label: "Email",
+      label: "tasfianetwork@gmail.com",
       href: "mailto:tasfianetwork@gmail.com",
       icon: <MailIcon className="h-5 w-5" />,
     },

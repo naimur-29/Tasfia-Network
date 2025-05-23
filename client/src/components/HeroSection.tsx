@@ -65,7 +65,7 @@ export function HeroSection() {
         plugins={[
           Autoplay({
             delay: 4000,
-            // jump: true,
+            jump: true,
           }),
         ]}
         setApi={setApi}

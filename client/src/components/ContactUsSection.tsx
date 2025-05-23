@@ -1,6 +1,6 @@
 // src/components/ContactUsSection.tsx
 import { Card, CardContent } from "./ui/card"; // Removed CardHeader, CardTitle if not used
-import { Phone, Clock, MapPin } from "lucide-react";
+import { Phone, MapPin, User } from "lucide-react";
 
 const contactDetails = [
   {
@@ -22,81 +22,14 @@ const contactDetails = [
       },
     ],
   },
-  // {
-  //   category: "Call For Cable Team",
-  //   items: [
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01719-820735",
-  //       href: "tel:01719820735",
-  //     },
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01671-146929",
-  //       href: "tel:01671146929",
-  //     },
-  //   ],
-  // },
-  // {
-  //   category: "Call For Billing",
-  //   items: [
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01719-820735",
-  //       href: "tel:01719820735",
-  //     },
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01671-146929",
-  //       href: "tel:01671146929",
-  //     },
-  //   ],
-  // },
-  // {
-  //   category: "Call For Networking & Software Solution",
-  //   items: [
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01719-820735",
-  //       href: "tel:01719820735",
-  //     },
-  //     {
-  //       icon: (
-  //         <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-  //       ),
-  //       text: "01671-146929",
-  //       href: "tel:01671146929",
-  //     },
-  //   ],
-  // },
   {
-    category: "Call For Management",
+    category: "Managing Director",
     highlight: true,
     items: [
-      { name: "Kartik Robi Das", title: "Managing Director" },
       {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01719-820735",
-        href: "tel:01719820735",
-      },
-      {
-        icon: (
-          <Phone className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-        ),
-        text: "01671-146929",
-        href: "tel:01671146929",
+        icon: <User className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />,
+        text: "Anwar Hossain",
+        href: "#about-us-section",
       },
     ],
   },
@@ -158,16 +91,6 @@ export function ContactUsSection() {
                 </ul>
               </div>
             ))}
-
-            <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
-              <h3 className="text-lg font-semibold text-indigo-700 dark:text-indigo-400 mb-3">
-                Customer Care Open
-              </h3>
-              <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-300 text-sm">
-                <Clock className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-                <span>9:00 am to 8:00 pm</span>
-              </div>
-            </div>
 
             <div className="mt-6">
               <h3 className="text-lg font-semibold text-indigo-700 dark:text-indigo-400 mb-3">
